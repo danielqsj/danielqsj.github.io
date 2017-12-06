@@ -18,21 +18,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.31.1 with theme Tranquilpeak 0.4.3-BETA">
-    <title>Archives</title>
+    <title>Project</title>
     <meta name="author" content="Daniel Qian">
     <meta name="keywords" content="">
 
     <link rel="icon" href="https://danielqsj.github.io/favicon.png">
     
-      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://danielqsj.github.io/archives/index.xml">
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://danielqsj.github.io/series/project/index.xml">
     
 
     
     <meta name="description" content="Hugo tranquilpeak theme demo">
     <meta property="og:description" content="Hugo tranquilpeak theme demo">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Archives">
-    <meta property="og:url" content="/archives/">
+    <meta property="og:title" content="Project">
+    <meta property="og:url" content="/series/project/">
     <meta property="og:site_name" content="Daniel&#39;s Blog">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Daniel&#39;s Blog">
@@ -199,43 +199,86 @@ ga('send', 'pageview');
   </div>
 </nav>
 
+      
+
       <div id="main" data-behavior="2"
         class="
                hasCoverMetaIn
                ">
-        <div id="archives" class="main-content-wrap">
-          <form id="filter-form" action="#">
-            <input name="date" type="text" class="form-control input--xlarge" placeholder="Search date (YYYY/MM/DD)" autofocus="autofocus">
-          </form>
-          <h5 class="archive-result text-color-base text-xlarge" data-message-zero="no post found" data-message-one="1 post found" data-message-other="{n} posts found"></h5>
-<section class="boxes">
+        <section class="postShorten-group main-content-wrap">
+          
+          
+            
   
     
-    <div class="archive archive-year box" data-date="2017">
-      <h4 class="archive-title" style="text-decoration: none;">2017</h4>
       
-        <ul class="archive-posts archive-month" data-date="201712">
-          <h5 class="archive-title" style="text-decoration: none;">December</h5>
-          
-            <li class="archive-post archive-day" data-date="20171206">
-              <a class="archive-post-title" href="https://danielqsj.github.io/2017/12/kafka-exporter-v0.3.0-release/">Kafka Exporter v0.3.0 Release</a>
-            </li>
-          
-        </ul>
+        
       
-        <ul class="archive-posts archive-month" data-date="201705">
-          <h5 class="archive-title" style="text-decoration: none;">May</h5>
-          
-            <li class="archive-post archive-day" data-date="20170502">
-              <a class="archive-post-title" href="https://danielqsj.github.io/2017/05/about-the-site/">About the site</a>
-            </li>
-          
-        </ul>
-      
-    </div>
+    
   
-</section>
-        </div>
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="https://danielqsj.github.io/2017/12/kafka-exporter-v0.3.0-release/">
+          Kafka Exporter v0.3.0 Release
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2017-12-06T23:05:05&#43;08:00">
+        
+  December 6, 2017
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://danielqsj.github.io/categories/project">project</a>
+    
+  
+
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      时隔1个半月，kakfa exporter v0.3.0于今日正式发布，欢迎大家试用。
+项目地址 Github: https://github.com/danielqsj/kafka_exporter
+Docker Hub: https://hub.docker.com/r/danielqsj/kafka-exporter
+项目状态 自v0.2.0版本被Prometheus项目官方推荐以来，镜像累计下载量已超过5.4k，已经稳定运行在多个平台。
+特点 kafka exporter 通过 Kafka Protocol Specification 收集 Brokers, Topics 以及 Consumer Groups的相关指标，使用简单，运行高效，相比于以往通过kafka内置的脚本进行收集，由于没有了JVM的运行开销，指标收集时间从分钟级别降到秒级别，便于大规模集群的监控。
+使用方法 详见项目说明文档。
+指标 Brokers Metrics details
+   Name Exposed informations     kafka_brokers Number of Brokers in the Kafka Cluster    Metrics output example
+# HELP kafka_brokers Number of Brokers in the Kafka Cluster. # TYPE kafka_brokers gauge kafka_brokers 3  Topics Metrics details
+      <p>
+        <a href="https://danielqsj.github.io/2017/12/kafka-exporter-v0.3.0-release/" class="postShorten-excerpt_link link">Continue reading</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+          
+
+        </section>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2017 Daniel Qian. All Rights Reserved
+  </span>
+</footer>
+
       </div>
     </div>
     

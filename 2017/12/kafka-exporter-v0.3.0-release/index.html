@@ -22,38 +22,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.31.1 with theme Tranquilpeak 0.4.3-BETA">
-    <title>About the site</title>
+    <title>Kafka Exporter v0.3.0 Release</title>
     <meta name="author" content="Daniel Qian">
-    <meta name="keywords" content="about">
+    <meta name="keywords" content="kafka-exporter">
 
     <link rel="icon" href="https://danielqsj.github.io/favicon.png">
     
 
     
-    <meta name="description" content="建博客缘由 从接触电脑开始，就一直关注博客的发展，也从很多博主那里学到了各种Tips，所以也一直很希望能够加入写博客的队伍中，记录一下平时生活中发生的琐事和所关注的技术问题。 以前也在开源中国和博客园里面建立过博客,不过用着不顺手，所以博客写的断断续续，以后决定开始建立一个独立博客，并开始坚持记录，欢迎各位讨论与监督。
-工具 建站工具 由于暂时还未购买域名，所以打算暂时托管在github上，对比了几个常用的建站工具Jekyll, Octopress, Hexo, Hugo等之后，最终选择了简洁方便的Hugo。
-写作工具 毫无疑问，选择Markdown。如果有同学对其语法不清楚的话，可以参考Markdown语法说明。
-技术关注点 我其实对很多新鲜和基础的技术都很感兴趣，以后会把各个方面的学习和实践都记录下来。
-主要的领域包括但不限于：
- 云计算 大数据 人工智能 智能硬件与嵌入式开发 网络安全 ……  希望能和大家多多交流,我会尽快回复各位的留言。">
-    <meta property="og:description" content="建博客缘由 从接触电脑开始，就一直关注博客的发展，也从很多博主那里学到了各种Tips，所以也一直很希望能够加入写博客的队伍中，记录一下平时生活中发生的琐事和所关注的技术问题。 以前也在开源中国和博客园里面建立过博客,不过用着不顺手，所以博客写的断断续续，以后决定开始建立一个独立博客，并开始坚持记录，欢迎各位讨论与监督。
-工具 建站工具 由于暂时还未购买域名，所以打算暂时托管在github上，对比了几个常用的建站工具Jekyll, Octopress, Hexo, Hugo等之后，最终选择了简洁方便的Hugo。
-写作工具 毫无疑问，选择Markdown。如果有同学对其语法不清楚的话，可以参考Markdown语法说明。
-技术关注点 我其实对很多新鲜和基础的技术都很感兴趣，以后会把各个方面的学习和实践都记录下来。
-主要的领域包括但不限于：
- 云计算 大数据 人工智能 智能硬件与嵌入式开发 网络安全 ……  希望能和大家多多交流,我会尽快回复各位的留言。">
+    <meta name="description" content="时隔1个半月，kakfa exporter v0.3.0于今日正式发布，欢迎大家试用。
+项目地址 Github: https://github.com/danielqsj/kafka_exporter
+Docker Hub: https://hub.docker.com/r/danielqsj/kafka-exporter
+项目状态 自v0.2.0版本被Prometheus项目官方推荐以来，镜像累计下载量已超过5.4k，已经稳定运行在多个平台。
+特点 kafka exporter 通过 Kafka Protocol Specification 收集 Brokers, Topics 以及 Consumer Groups的相关指标，使用简单，运行高效，相比于以往通过kafka内置的脚本进行收集，由于没有了JVM的运行开销，指标收集时间从分钟级别降到秒级别，便于大规模集群的监控。
+使用方法 详见项目说明文档。
+指标 Brokers Metrics details
+   Name Exposed informations     kafka_brokers Number of Brokers in the Kafka Cluster    Metrics output example
+# HELP kafka_brokers Number of Brokers in the Kafka Cluster. # TYPE kafka_brokers gauge kafka_brokers 3  Topics Metrics details">
+    <meta property="og:description" content="时隔1个半月，kakfa exporter v0.3.0于今日正式发布，欢迎大家试用。
+项目地址 Github: https://github.com/danielqsj/kafka_exporter
+Docker Hub: https://hub.docker.com/r/danielqsj/kafka-exporter
+项目状态 自v0.2.0版本被Prometheus项目官方推荐以来，镜像累计下载量已超过5.4k，已经稳定运行在多个平台。
+特点 kafka exporter 通过 Kafka Protocol Specification 收集 Brokers, Topics 以及 Consumer Groups的相关指标，使用简单，运行高效，相比于以往通过kafka内置的脚本进行收集，由于没有了JVM的运行开销，指标收集时间从分钟级别降到秒级别，便于大规模集群的监控。
+使用方法 详见项目说明文档。
+指标 Brokers Metrics details
+   Name Exposed informations     kafka_brokers Number of Brokers in the Kafka Cluster    Metrics output example
+# HELP kafka_brokers Number of Brokers in the Kafka Cluster. # TYPE kafka_brokers gauge kafka_brokers 3  Topics Metrics details">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="About the site">
-    <meta property="og:url" content="/2017/05/about-the-site/">
+    <meta property="og:title" content="Kafka Exporter v0.3.0 Release">
+    <meta property="og:url" content="/2017/12/kafka-exporter-v0.3.0-release/">
     <meta property="og:site_name" content="Daniel&#39;s Blog">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Daniel&#39;s Blog">
-    <meta name="twitter:description" content="建博客缘由 从接触电脑开始，就一直关注博客的发展，也从很多博主那里学到了各种Tips，所以也一直很希望能够加入写博客的队伍中，记录一下平时生活中发生的琐事和所关注的技术问题。 以前也在开源中国和博客园里面建立过博客,不过用着不顺手，所以博客写的断断续续，以后决定开始建立一个独立博客，并开始坚持记录，欢迎各位讨论与监督。
-工具 建站工具 由于暂时还未购买域名，所以打算暂时托管在github上，对比了几个常用的建站工具Jekyll, Octopress, Hexo, Hugo等之后，最终选择了简洁方便的Hugo。
-写作工具 毫无疑问，选择Markdown。如果有同学对其语法不清楚的话，可以参考Markdown语法说明。
-技术关注点 我其实对很多新鲜和基础的技术都很感兴趣，以后会把各个方面的学习和实践都记录下来。
-主要的领域包括但不限于：
- 云计算 大数据 人工智能 智能硬件与嵌入式开发 网络安全 ……  希望能和大家多多交流,我会尽快回复各位的留言。">
+    <meta name="twitter:description" content="时隔1个半月，kakfa exporter v0.3.0于今日正式发布，欢迎大家试用。
+项目地址 Github: https://github.com/danielqsj/kafka_exporter
+Docker Hub: https://hub.docker.com/r/danielqsj/kafka-exporter
+项目状态 自v0.2.0版本被Prometheus项目官方推荐以来，镜像累计下载量已超过5.4k，已经稳定运行在多个平台。
+特点 kafka exporter 通过 Kafka Protocol Specification 收集 Brokers, Topics 以及 Consumer Groups的相关指标，使用简单，运行高效，相比于以往通过kafka内置的脚本进行收集，由于没有了JVM的运行开销，指标收集时间从分钟级别降到秒级别，便于大规模集群的监控。
+使用方法 详见项目说明文档。
+指标 Brokers Metrics details
+   Name Exposed informations     kafka_brokers Number of Brokers in the Kafka Cluster    Metrics output example
+# HELP kafka_brokers Number of Brokers in the Kafka Cluster. # TYPE kafka_brokers gauge kafka_brokers 3  Topics Metrics details">
     
     
 
@@ -228,15 +237,15 @@ ga('send', 'pageview');
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      About the site
+      Kafka Exporter v0.3.0 Release
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2017-05-02T21:53:54&#43;08:00">
+      <time itemprop="datePublished" datetime="2017-12-06T23:05:05&#43;08:00">
         
-  May 2, 2017
+  December 6, 2017
 
       </time>
     
@@ -245,7 +254,7 @@ ga('send', 'pageview');
   
     <span>in</span>
     
-      <a class="category-link" href="https://danielqsj.github.io/categories/misc">misc</a>
+      <a class="category-link" href="https://danielqsj.github.io/categories/project">project</a>
     
   
 
@@ -257,37 +266,203 @@ ga('send', 'pageview');
             <div class="main-content-wrap">
               
 
-<h3 id="建博客缘由">建博客缘由</h3>
+<p>时隔1个半月，kakfa exporter v0.3.0于今日正式发布，欢迎大家试用。</p>
 
-<p>从接触电脑开始，就一直关注博客的发展，也从很多博主那里学到了各种Tips，所以也一直很希望能够加入写博客的队伍中，记录一下平时生活中发生的琐事和所关注的技术问题。
-以前也在开源中国和博客园里面建立过博客,不过用着不顺手，所以博客写的断断续续，以后决定开始建立一个独立博客，并开始坚持记录，欢迎各位讨论与监督。</p>
+<h1 id="项目地址">项目地址</h1>
 
-<h3 id="工具">工具</h3>
+<p>Github: <a href="https://github.com/danielqsj/kafka_exporter">https://github.com/danielqsj/kafka_exporter</a></p>
 
-<h4 id="建站工具">建站工具</h4>
+<p>Docker Hub: <a href="https://hub.docker.com/r/danielqsj/kafka-exporter">https://hub.docker.com/r/danielqsj/kafka-exporter</a></p>
 
-<p>由于暂时还未购买域名，所以打算暂时托管在github上，对比了几个常用的建站工具Jekyll, Octopress, Hexo, Hugo等之后，最终选择了简洁方便的Hugo。</p>
+<h1 id="项目状态">项目状态</h1>
 
-<h4 id="写作工具">写作工具</h4>
+<p>自v0.2.0版本被Prometheus项目官方<a href="https://prometheus.io/docs/instrumenting/exporters/#messaging-systems">推荐</a>以来，<a href="https://hub.docker.com/r/danielqsj/kafka-exporter/">镜像</a>累计下载量已超过5.4k，已经稳定运行在多个平台。</p>
 
-<p>毫无疑问，选择Markdown。如果有同学对其语法不清楚的话，可以参考Markdown语法说明。</p>
+<h2 id="特点">特点</h2>
 
-<h3 id="技术关注点">技术关注点</h3>
+<p>kafka exporter 通过 <a href="https://cwiki.apache.org/confluence/display/KAFKA/A+Guide+To+The+Kafka+Protocol">Kafka Protocol Specification</a> 收集 Brokers, Topics 以及 Consumer Groups的相关指标，使用简单，运行高效，相比于以往通过kafka内置的脚本进行收集，由于没有了JVM的运行开销，指标收集时间从分钟级别降到秒级别，便于大规模集群的监控。</p>
 
-<p>我其实对很多新鲜和基础的技术都很感兴趣，以后会把各个方面的学习和实践都记录下来。</p>
+<h2 id="使用方法">使用方法</h2>
 
-<p>主要的领域包括但不限于：</p>
+<p>详见项目<a href="https://github.com/danielqsj/kafka_exporter/blob/master/README.md">说明文档</a>。</p>
+
+<h2 id="指标">指标</h2>
+
+<h3 id="brokers">Brokers</h3>
+
+<p><strong>Metrics details</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Exposed informations</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>kafka_brokers</code></td>
+<td>Number of Brokers in the Kafka Cluster</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Metrics output example</strong></p>
+
+<pre><code class="language-txt"># HELP kafka_brokers Number of Brokers in the Kafka Cluster.
+# TYPE kafka_brokers gauge
+kafka_brokers 3
+</code></pre>
+
+<h3 id="topics">Topics</h3>
+
+<p><strong>Metrics details</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Exposed informations</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>kafka_topic_partitions</code></td>
+<td>Number of partitions for this Topic</td>
+</tr>
+
+<tr>
+<td><code>kafka_topic_partition_current_offset</code></td>
+<td>Current Offset of a Broker at Topic/Partition</td>
+</tr>
+
+<tr>
+<td><code>kafka_topic_partition_oldest_offset</code></td>
+<td>Oldest Offset of a Broker at Topic/Partition</td>
+</tr>
+
+<tr>
+<td><code>kafka_topic_partition_in_sync_replica</code></td>
+<td>Number of In-Sync Replicas for this Topic/Partition</td>
+</tr>
+
+<tr>
+<td><code>kafka_topic_partition_leader</code></td>
+<td>Leader Broker ID of this Topic/Partition</td>
+</tr>
+
+<tr>
+<td><code>kafka_topic_partition_leader_is_preferred</code></td>
+<td>1 if Topic/Partition is using the Preferred Broker</td>
+</tr>
+
+<tr>
+<td><code>kafka_topic_partition_replicas</code></td>
+<td>Number of Replicas for this Topic/Partition</td>
+</tr>
+
+<tr>
+<td><code>kafka_topic_partition_under_replicated_partition</code></td>
+<td>1 if Topic/Partition is under Replicated</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Metrics output example</strong></p>
+
+<pre><code class="language-txt"># HELP kafka_topic_partitions Number of partitions for this Topic
+# TYPE kafka_topic_partitions gauge
+kafka_topic_partitions{topic=&quot;__consumer_offsets&quot;} 50
+
+# HELP kafka_topic_partition_current_offset Current Offset of a Broker at Topic/Partition
+# TYPE kafka_topic_partition_current_offset gauge
+kafka_topic_partition_current_offset{partition=&quot;0&quot;,topic=&quot;__consumer_offsets&quot;} 0
+
+# HELP kafka_topic_partition_oldest_offset Oldest Offset of a Broker at Topic/Partition
+# TYPE kafka_topic_partition_oldest_offset gauge
+kafka_topic_partition_oldest_offset{partition=&quot;0&quot;,topic=&quot;__consumer_offsets&quot;} 0
+
+# HELP kafka_topic_partition_in_sync_replica Number of In-Sync Replicas for this Topic/Partition
+# TYPE kafka_topic_partition_in_sync_replica gauge
+kafka_topic_partition_in_sync_replica{partition=&quot;0&quot;,topic=&quot;__consumer_offsets&quot;} 3
+
+# HELP kafka_topic_partition_leader Leader Broker ID of this Topic/Partition
+# TYPE kafka_topic_partition_leader gauge
+kafka_topic_partition_leader{partition=&quot;0&quot;,topic=&quot;__consumer_offsets&quot;} 0
+
+# HELP kafka_topic_partition_leader_is_preferred 1 if Topic/Partition is using the Preferred Broker
+# TYPE kafka_topic_partition_leader_is_preferred gauge
+kafka_topic_partition_leader_is_preferred{partition=&quot;0&quot;,topic=&quot;__consumer_offsets&quot;} 1
+
+# HELP kafka_topic_partition_replicas Number of Replicas for this Topic/Partition
+# TYPE kafka_topic_partition_replicas gauge
+kafka_topic_partition_replicas{partition=&quot;0&quot;,topic=&quot;__consumer_offsets&quot;} 3
+
+# HELP kafka_topic_partition_under_replicated_partition 1 if Topic/Partition is under Replicated
+# TYPE kafka_topic_partition_under_replicated_partition gauge
+kafka_topic_partition_under_replicated_partition{partition=&quot;0&quot;,topic=&quot;__consumer_offsets&quot;} 0
+</code></pre>
+
+<h3 id="consumer-groups">Consumer Groups</h3>
+
+<p><strong>Metrics details</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Exposed informations</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>kafka_consumergroup_current_offset</code></td>
+<td>Current Offset of a ConsumerGroup at Topic/Partition</td>
+</tr>
+
+<tr>
+<td><code>kafka_consumergroup_lag</code></td>
+<td>Current Approximate Lag of a ConsumerGroup at Topic/Partition</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Metrics output example</strong></p>
+
+<pre><code class="language-txt"># HELP kafka_consumergroup_current_offset Current Offset of a ConsumerGroup at Topic/Partition
+# TYPE kafka_consumergroup_current_offset gauge
+kafka_consumergroup_current_offset{consumergroup=&quot;KMOffsetCache-kafka-manager-3806276532-ml44w&quot;,partition=&quot;0&quot;,topic=&quot;__consumer_offsets&quot;} -1
+
+# HELP kafka_consumergroup_lag Current Approximate Lag of a ConsumerGroup at Topic/Partition
+# TYPE kafka_consumergroup_lag gauge
+kafka_consumergroup_lag{consumergroup=&quot;KMOffsetCache-kafka-manager-3806276532-ml44w&quot;,partition=&quot;0&quot;,topic=&quot;__consumer_offsets&quot;} 1
+</code></pre>
+
+<h2 id="release-notes">Release Notes</h2>
+
+<h3 id="v0-3-0">v0.3.0</h3>
 
 <ul>
-<li>云计算</li>
-<li>大数据</li>
-<li>人工智能</li>
-<li>智能硬件与嵌入式开发</li>
-<li>网络安全</li>
-<li>……</li>
+<li>[FEATURE] Support kafka SASL/PLAIN authentication</li>
+<li>[FEATURE] Support topic filter</li>
+<li>[BUGFIX] Fix topics not sync when modifying topic list</li>
 </ul>
 
-<p>希望能和大家多多交流,我会尽快回复各位的留言。</p>
+<h3 id="v0-2-0">v0.2.0</h3>
+
+<ul>
+<li>[CHANGE] Change default port to 9308</li>
+<li>[ENHANCEMENT] Support multiple addresses for kafka servers</li>
+</ul>
+
+<h3 id="v0-1-0">v0.1.0</h3>
+
+<ul>
+<li>Initial release</li>
+</ul>
 
               
             </div>
@@ -300,7 +475,7 @@ ga('send', 'pageview');
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">TAGGED IN</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://danielqsj.github.io/tags/misc/">misc</a>
+  <a class="tag tag--primary tag--small" href="https://danielqsj.github.io/tags/kafka-exporter/">kafka-exporter</a>
 
                   </div>
                 
@@ -313,7 +488,7 @@ ga('send', 'pageview');
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://danielqsj.github.io/2017/12/kafka-exporter-v0.3.0-release/" data-tooltip="Kafka Exporter v0.3.0 Release">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -321,7 +496,7 @@ ga('send', 'pageview');
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--disabled">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://danielqsj.github.io/2017/05/about-the-site/" data-tooltip="About the site">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -381,7 +556,7 @@ ga('send', 'pageview');
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://danielqsj.github.io/2017/12/kafka-exporter-v0.3.0-release/" data-tooltip="Kafka Exporter v0.3.0 Release">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -389,7 +564,7 @@ ga('send', 'pageview');
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--disabled">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://danielqsj.github.io/2017/05/about-the-site/" data-tooltip="About the site">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -564,9 +739,9 @@ Docker Hub: https://hub.docker.com/r/danielqsj/kafka-exporter
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/danielqsj.github.io\/2017\/05\/about-the-site\/';
+          this.page.url = 'https:\/\/danielqsj.github.io\/2017\/12\/kafka-exporter-v0.3.0-release\/';
           
-            this.page.identifier = 'About the site';
+            this.page.identifier = 'Kafka exporter v0.3.0 release';
           
         };
         (function() {
